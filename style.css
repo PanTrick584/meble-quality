@@ -40,7 +40,12 @@ body {
     outline: none;
     border: none;
 }
-
+.header__one {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    padding: 4rem;
+}
 /* END OF GLOBAL */
 /* TRANSFORM */
 .transition {
@@ -130,44 +135,36 @@ body {
     border: .2rem solid var(--pirmary-color-dark);
     border-radius: 100px;
 }
-/* .header__popular {} */
-.header_menu {
-    width: 100%;
-    margin: 4rem 3rem;
-}
-.header_menu-ul {
-    width: 100%;
-    
-    flex-wrap: wrap;
-    justify-content: left;
-}
-.header_menu-ul li {
-    text-align: left;
-    font-size: 1.8rem;
-    font-weight: 400;
-    flex: 0 0 24%;
-    padding: 2.5rem 1rem;
-    margin: 0;
-}
-.header_menu-ul li:hover {
-    cursor: pointer;
-    color: var(--pirmary-color-dark);
-    /* background-color: var(--pirmary-color-light); */
-}
-.header_contact {
-    margin-left: 3rem;
-    display: flex;
-    font-size: 1.4rem;
-    border-bottom: 2px solid var(--primary-color);
-}
-.header_contact p {
-    font-size: 1.8rem;
-    font-weight: 400;
-}
-.header_contact p:last-of-type {
-    margin-left: 2rem;
-}
 /* END OF HEADER */
+/* SECTION CATEGORIES */
+.categories {
+    height: 100%;
+    width: 100%;
+}
+.categories__ul {
+    list-style-type: none;
+    border: .5rem solid var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.categories__ul li {
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    /* color: #fff; */
+    padding: 3rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: .4rem;
+    margin: .5rem;
+}
+.categories__ul li:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+/* END OF CATEGORIES */
 /* PRESENTATION ITEM BOX */
 .container__item {
     height: 100%;
@@ -212,10 +209,15 @@ body {
     height: 4rem;
     margin: 2rem;
     border: .3rem solid var(--pirmary-color-dark);
+    color: var(--pirmary-color-dark);
     outline: none;
     border-radius: 50%;
     font-size: 2rem;
     cursor: pointer;
+}
+.item__header button:hover {
+    background-color: var(--pirmary-color-dark);
+    color: #fff;
 }
 /* END OF ITEM BOX*/
 /* SECTION */
@@ -257,13 +259,6 @@ body {
 .novelty {
     height: 100%;
     width: 100%;
-}
-.novelty h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 400;
-    padding: 4rem;
 }
 .novelty__carusel {
     display: flex;
@@ -316,12 +311,6 @@ body {
     width: 100%;
     text-align: center;
 }
-.family__h1 {
-    font-size: 4rem;
-    padding: 3rem;
-    text-transform: uppercase;
-    font-weight: 400;
-}
 .family__img {
     height: 30rem;
     background-image: url('img/teraz_rodzina.png');
@@ -361,7 +350,7 @@ body {
     font-weight: 400;
 }
 .footer__ul li {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
     /* color: #fff; */
     text-transform: uppercase;

@@ -51,7 +51,7 @@ function setSliderBackground() {
     const changeDot = (num) => dots.forEach( (dot, id) => {
         dot.style.backgroundColor = "transparent";
         if(id === num) {
-            dot.style.backgroundColor = "#fff";
+            dot.style.backgroundColor = "#a47b1e";
         }
     })
     changeBackground(num);
